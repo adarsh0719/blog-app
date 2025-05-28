@@ -19,7 +19,7 @@ const Navigation = () => {
     >
       <Container fluid>
         <Navbar.Brand as={Link} to="/" className="fw-bold" onClick={closeMenu}>
-          <span className="d-inline-block align-middle px-2">
+          <span className="d-inline-block align-middle px-4">
             Blog<span className="text-primary">Hub</span>
           </span>
         </Navbar.Brand>
@@ -54,7 +54,7 @@ const Navigation = () => {
       Home
     </Nav.Link>
 
-    <div className="d-none d-lg-flex ms-lg-auto align-items-center gap-3">
+    <div className="d-none d-lg-flex ms-lg-auto align-items-center gap-3 px-4">
       <Nav.Link
         as={Link}
         to="/"
@@ -68,7 +68,7 @@ const Navigation = () => {
         as={Link}
         to="/add-blog"
         variant="primary"
-        className="px-4 py-2 fw-medium"
+        className="px-3 py-1 fw-medium"
         onClick={closeMenu}
       >
         + Add Blog
@@ -77,6 +77,7 @@ const Navigation = () => {
   </Nav>
 </Navbar.Collapse>
       </Container>
+
     </Navbar>
   );
 };
